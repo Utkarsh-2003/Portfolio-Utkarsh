@@ -1,0 +1,24 @@
+[
+  {
+    "name": "E-commerce Website",
+    "technologies": [
+      "React",
+      "Firebase",
+      "Bootstrap"
+    ],
+    "description": "Our E-commerce site provides a smooth shopping experience, featuring easy user authentication, detailed plant descriptions, and a robust search function. With secure payment integration and informative pages, we aim to offer convenience and satisfaction to our customers.",
+    "github_link": "https://github.com/Utkarsh-2003/Kachnaar",
+    "live_demo_link": "https://kachnaar.netlify.app/"
+  },
+  {
+    "name": "Project Management Website",
+    "technologies": [
+      "React",
+      "Firebase",
+      "Bootstrap"
+    ],
+    "description": "Our project management platform streamlines collaboration with user authentication, detailed project pages, and progress tracking dashboards. The comments section fosters effective teamwork, ensuring successful project delivery.",
+    "github_link": "https://github.com/Utkarsh-2003/Project-Management",
+    "live_demo_link": "https://utkarsh-project-management.netlify.app/"
+  }
+]

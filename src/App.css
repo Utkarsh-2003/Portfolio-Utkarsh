@@ -1,0 +1,66 @@
+body {
+  background: hsla(172, 90%, 59%, 1);
+
+  background: linear-gradient(
+    180deg,
+    hsla(172, 90%, 59%, 1) 30%,
+    hsla(185, 37%, 34%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    180deg,
+    hsla(172, 90%, 59%, 1) 30%,
+    hsla(185, 37%, 34%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    180deg,
+    hsla(172, 90%, 59%, 1) 30%,
+    hsla(185, 37%, 34%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#37F5DC", endColorstr="#367176", GradientType=1 );
+  min-height: 100vh;
+}
+
+#picture {
+  background-image: url(./Components/images/SVG-image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* body {
+  background-color: white;
+} */
+/* 
+body {
+  background-image: url(./Components/images/background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+[data-bs-theme="dark"] {
+  background-image: url(./Components/images/dark-mode.gif);
+  color: white;
+}
+
+[data-bs-theme="dark"] {
+  #github,
+  #eye {
+    color: white !important;
+  }
+}
+
+/* 
+.toggle-container {
+  margin-top: 1rem;
+  margin-left: 69rem;
+} */
+
+.toggle {
+  visibility: hidden;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(251, 133, 0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
