@@ -112,7 +112,7 @@ const Main = () => {
                           target="_blank"
                           id="github"
                           title="Connect with me on Github"
-                        >Github</Link>
+                        ></Link>
                         <br />
                         <Link
                           to="https://www.linkedin.com/in/utkarsh-sorathia-a9292b22a"

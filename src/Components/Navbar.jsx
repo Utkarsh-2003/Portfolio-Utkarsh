@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-light border-bottom border-4 border-warning shadow-sm rounded-pill fixed-top mx-4 mt-2">
+      <nav className="navbar navbar-expand-lg bg-light border-bottom border-4 border-warning shadow-sm rounded fixed-top mx-4 mt-2">
         <div className="container-fluid">
           <a className="text-decoration-none text-dark mx-4 fs-4" href="#home">
             Utkarsh Sorathia
