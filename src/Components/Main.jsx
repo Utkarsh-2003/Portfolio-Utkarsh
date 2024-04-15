@@ -192,10 +192,7 @@ const Main = () => {
                   dynamic and user-friendly web applications that leave a
                   lasting impact. By staying updated with the latest trends and
                   continuously refining my skills, I ensure that every project I
-                  undertake is delivered with precision and innovation. My
-                  commitment to excellence and meticulous attention to detail
-                  make me a trusted partner for crafting tailored solutions that
-                  exceed expectations.
+                  undertake is delivered with precision and innovation.
                 </h5>
               </div>
             </div>
@@ -233,7 +230,8 @@ const Main = () => {
             {skills.map((skill, index) => (
               <div className="col-lg-3 col-md-6 col-6 mb-3" key={index}>
                 <motion.div
-                  className="card h-100"
+                id="skillCard"
+                  className="card border-dark h-100"
                   whileHover={{
                     scale: 1.1,
                   }}
@@ -273,18 +271,22 @@ const Main = () => {
             {projectData.map((project, index) => (
               <div className="col-md-4" key={index}>
                 <motion.div
-                  className="card mb-2"
+                id="projectCard"
+                  className="card mb-2 border-dark"
                   whileHover={{
                     scale: 1.1,
                   }}
                   whileTap={{ scale: 1.1 }}
                 >
-                  <span className="card-header fs-3">{project.name}</span>
+                  <span className="card-header fs-3 border-bottom border-warning border-3">{project.name}</span>
                   <div className="card-body">
                     <span className="card-text">
                       {project.technologies.map((tech) => (
                         <>
-                          <span className="mx-1 border p-2 bg-warning rounded shadow-sm">
+                          <span
+                            className="mx-1 border p-2 rounded shadow-sm"
+                            style={{ backgroundColor: "#fb8500" }}
+                          >
                             {tech}
                           </span>
                         </>
@@ -336,14 +338,15 @@ const Main = () => {
             </div>
             <div className="col-lg-6">
               <div
-                className="container form-control mb-3"
+                className="container form-control border-dark mb-3"
                 style={{ maxWidth: "40rem" }}
+                id="ContactUsForm"
               >
                 <form className="p-4" onSubmit={handleSubmit}>
                   <div className="form-floating mb-3">
                     <input
                       type="text"
-                      className="form-control"
+                      className="form-control border-dark"
                       value={name}
                       name="name"
                       placeholder="Name"
@@ -358,7 +361,7 @@ const Main = () => {
                   <div className="form-floating mb-3">
                     <input
                       type="email"
-                      className="form-control"
+                      className="form-control border-dark"
                       value={email}
                       name="email"
                       placeholder="Email address"
@@ -372,7 +375,7 @@ const Main = () => {
                   </div>
                   <div className="form-floating mb-3">
                     <textarea
-                      className="form-control"
+                      className="form-control border-dark"
                       placeholder="Write your message here..."
                       value={message}
                       name="message"
@@ -401,6 +404,7 @@ const Main = () => {
         </div>
         {/* back to top button */}
         <button
+          title="Go to Top"
           class="btn rounded-pill position-fixed bottom-0 end-0 translate-middle d-none"
           onClick={() => scrollToTop()}
           id="back-to-up"

@@ -15,9 +15,9 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-light border-bottom border-4 border-warning shadow-sm rounded fixed-top mx-3 mt-2">
+      <nav className="navbar navbar-expand-lg bg-light border-bottom border-4 border-warning shadow-sm rounded-pill fixed-top mx-4 mt-2">
         <div className="container-fluid">
-          <a className="text-decoration-none text-dark mx-3 fs-4" href="#home">
+          <a className="text-decoration-none text-dark mx-4 fs-4" href="#home">
             Utkarsh Sorathia
           </a>
           <button
@@ -73,10 +73,12 @@ const Navbar = () => {
               </li>
             </ul>
             {/* theme change */}
-            <Toggle
-              isChecked={isDark}
-              handleChange={() => setIsDark(!isDark)}
-            />
+            <span className="me-4">
+              <Toggle
+                isChecked={isDark}
+                handleChange={() => setIsDark(!isDark)}
+              />
+            </span>
           </div>
         </div>
       </nav>

@@ -45,12 +45,41 @@ body {
 }
 
 [data-bs-theme="dark"] {
-  #github,
+  #github {
+    color: white !important;
+  }
+}
+
+[data-bs-theme="dark"] {
   #eye {
     color: white !important;
   }
 }
 
+[data-bs-theme="dark"] {
+  #projectCard {
+    border-color: white !important;
+  }
+}
+
+[data-bs-theme="dark"] {
+  #ContactUsForm {
+    border-color: white !important;
+  }
+}
+
+[data-bs-theme="dark"] {
+  input,
+  textarea {
+    border-color: white !important;
+  }
+}
+
+[data-bs-theme="dark"] {
+  #skillCard {
+    border-color: white !important;
+  }
+}
 /* 
 .toggle-container {
   margin-top: 1rem;
