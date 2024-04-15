@@ -108,7 +108,7 @@ const Main = () => {
                       <div className="fs-2">
                         <Link
                           to="https://github.com/Utkarsh-2003"
-                          className="text-dark bi bi-github"
+                          className="bi bi-github text-dark"
                           target="_blank"
                           id="github"
                           title="Connect with me on Github"
