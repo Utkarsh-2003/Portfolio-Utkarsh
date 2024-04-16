@@ -71,7 +71,7 @@ body {
 [data-bs-theme="dark"] {
   input,
   textarea {
-    border-color: #fff !important;
+    border-color: cyan !important;
   }
 }
 
