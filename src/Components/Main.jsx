@@ -9,11 +9,13 @@ import Swal from "sweetalert2";
 import ContactGif from "./images/contact.gif";
 import DownArrow from "./images/down.gif";
 import "../App.css";
+import useLocalStorage from "use-local-storage";
 
 const Main = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isDark, setIsDark] = useLocalStorage("isDark", false);
 
   window.onscroll = () => {
     toggleTopButton();
@@ -81,7 +83,7 @@ const Main = () => {
   };
   return (
     <>
-      <div>
+      <div data-bs-theme={isDark ? "dark" : "light"}>
         {/* my information */}
         <div id="home" className="pt-3">
           <div className="row mx-1 py-5 rounded">
