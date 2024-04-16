@@ -106,33 +106,33 @@ const Main = () => {
                         />
                       </div>
                       <div className="fs-2">
-                        <Link
-                          to="https://github.com/Utkarsh-2003"
+                        <a
+                          href="https://github.com/Utkarsh-2003"
                           className="bi bi-github text-dark"
                           target="_blank"
                           id="github"
-                          title="Connect with me on Github"
-                        ></Link>
+                          title="Connect on Github"
+                        ></a>
                         <br />
                         <Link
                           to="https://www.linkedin.com/in/utkarsh-sorathia-a9292b22a"
                           className="bi bi-linkedin text-primary"
                           target="_blank"
-                          title="Connect with me on LinkedIn"
+                          title="Connect on LinkedIn"
                         ></Link>
                         <br />
                         <Link
                           to="https://www.instagram.com/utkarsh__sorathia"
                           className="bi bi-instagram text-danger"
                           target="_blank"
-                          title="Connect with me on Instagram"
+                          title="Connect on Instagram"
                         ></Link>
                         <br />
                         <Link
                           to="https://www.facebook.com/profile.php?id=100056616396448&mibextid=JRoKGi"
                           className="bi bi-facebook text-primary"
                           target="_blank"
-                          title="Connect with me on Facebook"
+                          title="Connect on Facebook"
                         ></Link>
                       </div>
                     </div>
@@ -230,7 +230,7 @@ const Main = () => {
             {skills.map((skill, index) => (
               <div className="col-lg-3 col-md-6 col-6 mb-3" key={index}>
                 <motion.div
-                id="skillCard"
+                  id="skillCard"
                   className="card border-dark h-100"
                   whileHover={{
                     scale: 1.1,
@@ -271,14 +271,16 @@ const Main = () => {
             {projectData.map((project, index) => (
               <div className="col-md-4" key={index}>
                 <motion.div
-                id="projectCard"
+                  id="projectCard"
                   className="card mb-2 border-dark"
                   whileHover={{
                     scale: 1.1,
                   }}
                   whileTap={{ scale: 1.1 }}
                 >
-                  <span className="card-header fs-3 border-bottom border-warning border-3">{project.name}</span>
+                  <span className="card-header fs-3 border-bottom border-warning border-3">
+                    {project.name}
+                  </span>
                   <div className="card-body">
                     <span className="card-text">
                       {project.technologies.map((tech) => (
