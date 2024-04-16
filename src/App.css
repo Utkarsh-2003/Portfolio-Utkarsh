@@ -44,9 +44,9 @@ body {
   color: white;
 }
 
-[data-bs-theme="dark"] {
-  .github {
-    color: #fff !important;
+[data-bs-theme="light"] {
+  #github {
+    color: #000 !important;
   }
 }
 
