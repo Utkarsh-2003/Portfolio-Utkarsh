@@ -45,7 +45,7 @@ body {
 }
 
 [data-bs-theme="dark"] {
-  #github {
+  .github {
     color: #fff !important;
   }
 }
@@ -71,7 +71,7 @@ body {
 [data-bs-theme="dark"] {
   input,
   textarea {
-    border-color: cyan !important;
+    border-color: #fff !important;
   }
 }
 

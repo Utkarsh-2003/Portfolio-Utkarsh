@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import Swal from "sweetalert2";
 import ContactGif from "./images/contact.gif";
 import DownArrow from "./images/down.gif";
-import "../App.css"
+import "../App.css";
 
 const Main = () => {
   const [name, setName] = useState("");
@@ -106,13 +106,12 @@ const Main = () => {
                         />
                       </div>
                       <div className="fs-2">
-                        <a
-                          href="https://github.com/Utkarsh-2003"
-                          className="bi bi-github"
+                        <Link
+                          to="https://github.com/Utkarsh-2003"
+                          className="bi bi-github text-dark github"
                           target="_blank"
-                          id="github"
                           title="Connect on Github"
-                        ></a>
+                        ></Link>
                         <br />
                         <Link
                           to="https://www.linkedin.com/in/utkarsh-sorathia-a9292b22a"
