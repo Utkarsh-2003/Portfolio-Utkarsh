@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import Swal from "sweetalert2";
 import ContactGif from "./images/contact.gif";
 import DownArrow from "./images/down.gif";
-import "../App.css";
+import "../App.css"
 
 const Main = () => {
   const [name, setName] = useState("");
