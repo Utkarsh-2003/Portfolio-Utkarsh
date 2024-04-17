@@ -160,6 +160,7 @@ const Main = () => {
                           className="text-decoration-none text-dark"
                           href="/UtkarshSorathia.CO.2024.pdf"
                           download="UtkarshSorathia.pdf"
+                          title="Download Resume"
                         >
                           <i class="bi bi-download"></i> Resume
                         </a>
@@ -272,7 +273,7 @@ const Main = () => {
               <div className="col-md-4" key={index}>
                 <motion.div
                   id="projectCard"
-                  className="card mb-2 border-dark"
+                  className="card mb-2 border-dark h-100"
                   whileHover={{
                     scale: 1.1,
                   }}

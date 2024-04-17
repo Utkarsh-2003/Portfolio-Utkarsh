@@ -1,16 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../App.css";
 import useLocalStorage from "use-local-storage";
 import Toggle from "./Toggle";
 
 const Navbar = () => {
   const [isDark, setIsDark] = useLocalStorage("isDark", false);
+
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'hidden') {
+        document.title = '🙏 Come back to portfolio';
+      } else {
+        document.title = 'Portfolio | Utkarsh Sorathia';
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
+
   const collapseNavbar = () => {
     const navbarToggler = document.querySelector(".navbar-toggler");
     const navbarCollapse = document.querySelector(".navbar-collapse");
     if (navbarToggler && navbarCollapse.classList.contains("show")) {
       navbarToggler.click();
     }
+  };
+
+  const handleNavLinkClick = (sectionName) => {
+    document.title = `${sectionName} | Utkarsh Sorathia`;
   };
 
   return (
@@ -47,27 +68,44 @@ const Navbar = () => {
                   className="nav-link text-dark mx-3"
                   aria-current="page"
                   href="#home"
+                  onClick={() => handleNavLinkClick("Home")}
                 >
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-dark mx-3" href="#about">
+                <a
+                  className="nav-link text-dark mx-3"
+                  href="#about"
+                  onClick={() => handleNavLinkClick("About")}
+                >
                   About me
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-dark mx-3" href="#skill">
+                <a
+                  className="nav-link text-dark mx-3"
+                  href="#skill"
+                  onClick={() => handleNavLinkClick("Skill")}
+                >
                   Skills
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-dark mx-3" href="#projects">
+                <a
+                  className="nav-link text-dark mx-3"
+                  href="#projects"
+                  onClick={() => handleNavLinkClick("Project")}
+                >
                   Projects
                 </a>
               </li>
               <li className="nav-item d-flex align-items-between">
-                <a className="nav-link text-dark mx-3" href="#contact">
+                <a
+                  className="nav-link text-dark mx-3"
+                  href="#contact"
+                  onClick={() => handleNavLinkClick("Contact")}
+                >
                   Contact me
                 </a>
               </li>
