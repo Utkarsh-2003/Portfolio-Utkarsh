@@ -158,7 +158,7 @@ const Main = () => {
                       >
                         <a
                           className="text-decoration-none text-dark"
-                          href="/UtkarshSorathia.CO.2024.pdf"
+                          href="/Utkarsh-CV-25-07-2024.pdf"
                           download="UtkarshSorathia.pdf"
                           title="Download Resume"
                         >
